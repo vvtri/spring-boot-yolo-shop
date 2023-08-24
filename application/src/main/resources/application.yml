@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring-yolo-shop?stringtype=unspecified
+    username: local
+    password: local
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+auth:
+  jwt:
+    secret-key: secret
+    expires-in: 86400
+springdoc:
+  api-docs:
+    path: /api-doc
+  swagger-ui:
+    path: /swagger
+    operations-sorter: method

@@ -1,0 +1,4 @@
+auth:
+  jwt:
+    secret-key: secret
+    expires-in: 86400

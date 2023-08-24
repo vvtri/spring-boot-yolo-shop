@@ -33,5 +33,9 @@ build/
 .vscode/
 
 ### Config ###
-**/application*
-!**/application-example*
+**/application*.yml
+**/application*.yaml
+
+!**/application-example*.yml
+!**/application-example*.yaml
+
